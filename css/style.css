@@ -1,0 +1,47 @@
+body {
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#051937), color-stop(#2c455e), color-stop(#5a7585), color-stop(#92a7ae), to(#d0dbdc));
+  background-image: linear-gradient(to top, #051937, #2c455e, #5a7585, #92a7ae, #d0dbdc);
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.title {
+  padding: 30px 0;
+  color: #2c3b4d;
+}
+
+.container {
+  text-align: center;
+  margin: 30px 0;
+}
+
+button {
+  background: #4b6584;
+  font-size: 40px;
+  position: flex;
+  padding: 5px 15px;
+  margin-right: 30px;
+  border-radius: 5px;
+  color: #ffffff;
+  border: none;
+}
+
+button:hover {
+  -webkit-box-shadow: 10px 5px 5px #aeb370;
+          box-shadow: 10px 5px 5px #aeb370;
+  color: #8cd377;
+}
+
+#messages {
+  margin: 50px 0;
+  font-size: 40px;
+  color: #141a22;
+  line-height: 50px;
+}
+
+#messages last-of-type {
+  font-weight: bold;
+}
+/*# sourceMappingURL=style.css.map */
