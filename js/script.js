@@ -1,4 +1,5 @@
-function playGame(playerInput){
+{
+    playGame = function (playerInput){
     
     clearMessages()
 
@@ -38,12 +39,12 @@ function playGame(playerInput){
         } else if ( argPlayerMove == 'nieznany ruch'){
             printMessage('<h2>Nie wybrałeś ruchu i ja wygrywam!</h2>');
         }
+    
     }
 
-
-    let randomNumber = Math.floor(Math.random() * 3 + 1);
+    const randomNumber = Math.floor(Math.random() * 3 + 1);
     console.log("Wylosowana liczba to: " + randomNumber);
-    let argComputerMove = getMoveName(randomNumber);
+    const argComputerMove = getMoveName(randomNumber);
 
 /*if (randomNumber == 1) {
 	computerMove = "kamień";
@@ -55,8 +56,8 @@ function playGame(playerInput){
     printMessage("Mój ruch to: " + argComputerMove);
     /*let playerInput = prompt("Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.");
     console.log("Gracz wpisał: " + playerInput);*/
-    let argPlayerMove = getMoveName(playerInput);
-
+    const argPlayerMove = getMoveName(playerInput);
+    
 
 /*if (playerInput == "1") {
 	playerMove = "kamień";
@@ -77,3 +78,4 @@ document.getElementById('play_paper').addEventListener('click', function(){playG
 });
 document.getElementById('play_scissors').addEventListener('click', function(){playGame(3);
 });
+}
